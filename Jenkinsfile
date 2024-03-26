@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh "chmod +x ./script.sh"
-                sh(""" ./script.sh""")
+                sh "bash -c 'sudo ./script.sh'"
                 
             }
         }
